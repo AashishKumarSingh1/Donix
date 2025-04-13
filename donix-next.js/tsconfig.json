@@ -27,8 +27,8 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "src/components/User_dashboard/Add.jsx"  ],
+    "**/*.tsx",
+    "src/components/User_dashboard/Add.jsx"  ],
   "exclude": [
     "node_modules"
   ]
