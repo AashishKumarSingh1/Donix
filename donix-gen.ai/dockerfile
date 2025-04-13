@@ -1,0 +1,24 @@
+FROM python:3.9-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    make \
+    libjpeg-dev \
+    zlib1g-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir --extra-index-url https://download.pytorch.org/whl/cpu torch==2.1.0+cpu
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY .env .env
+COPY . .
+
+EXPOSE 5000
+
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]

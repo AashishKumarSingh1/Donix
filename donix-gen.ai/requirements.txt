@@ -1,0 +1,13 @@
+Flask
+Flask-Cors
+numpy==1.26.4
+python-dotenv
+google-generativeai
+Pillow
+langchain
+langchain-groq
+langchain-community
+uuid
+sentence-transformers
+faiss-cpu 
+hf_xet

@@ -1,0 +1,31 @@
+version: '3.9'
+
+services:
+  typescript-backend:
+    build: ./donix-typescript
+    container_name: ts-backend
+    ports:
+      - "10000:10000"
+    restart: always
+
+  flask-app:
+    build: ./donix-gen.ai
+    container_name: flask-app
+    ports:
+      - "5000:5000"
+    restart: always
+    environment:
+      - FLASK_APP=app:create_app
+      - FLASK_ENV=development
+    depends_on:
+      - typescript-backend
+
+  nextjs-frontend:
+    build: ./donix-next.js
+    container_name: nextjs-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - flask-app
+      - typescript-backend
+    restart: always

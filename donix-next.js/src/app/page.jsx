@@ -1,14 +1,14 @@
 "use client"
 import React from 'react'
 import { useTheme } from 'next-themes'
-import Navbar from '@/components/common/Navbar'
-import Footer from '@/components/common/Footer'
-import Hero from '@/components/landing/Hero'
-import WhyChooseDonix from '@/components/landing/WhyChoseDonix'
-import HowItWorks from '@/components/landing/HowItWorks'
-import Numbers from '@/components/landing/Numbers'
-import FAQ from '@/components/landing/Faq'
-import ChatBot from '@/components/common/ChatBot'
+import Navbar from "../components/common/Navbar"
+import Footer from '../components/common/Footer'
+import Hero from '../components/landing/Hero'
+import WhyChooseDonix from '../components/landing/WhyChoseDonix'
+import HowItWorks from '../components/landing/HowItWorks'
+import Numbers from '../components/landing/Numbers'
+import FAQ from '../components/landing/Faq'
+import ChatBot from '../components/common/ChatBot'
 function Page() {
   const {resolvedTheme}=useTheme()
   const darkMode = resolvedTheme === "dark"

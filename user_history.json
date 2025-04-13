@@ -1,0 +1,32 @@
+[
+    {
+        "vitals": {
+            "heart_rate": 85,
+            "bp": "125/85",
+            "oxygen_saturation": 96,
+            "symptoms": "Mild chest pain and fatigue"
+        },
+        "score": "Based on the provided patient vitals and symptoms, I would predict a recovery score as follows:\n\n- Heart Rate: 85 is within the normal range (60-100 BPM), so it does not indicate a high risk of recovery issues.\n- Blood Pressure: 125/85 is within the normal range (90-140/60-90 mmHg), so it does not indicate a high risk of recovery issues.\n- Oxygen Saturation: 96 is close to the normal range (95-100%), indicating mild hypoxia, which could impact recovery.\n- Symptoms: Mild chest pain and fatigue could indicate underlying cardiac or respiratory issues, which could impact recovery.\n\nConsidering the above factors, I would assign a recovery score as follows:\n\nRecovery Score: 60\n\nThis score indicates a moderate risk of recovery issues, likely due to the mild hypoxia and symptoms of chest pain and fatigue. However, it is essential to note that this is a simplified prediction and actual recovery scores should be determined by a qualified healthcare professional.",
+        "feedback": "Feeling better after medication."
+    },
+    {
+        "vitals": {
+            "heart_rate": 85,
+            "bp": "125/85",
+            "oxygen_saturation": 96,
+            "symptoms": "Mild chest pain and fatigue"
+        },
+        "score": "Based on the provided patient vitals and symptoms, I will evaluate the following factors that can impact recovery:\n\n- Heart Rate: 85, which is slightly below the normal range (60-100 BPM), indicating a mild and potentially healthy response to stress.\n- Blood Pressure: 125/85, which is within a normal range (90-120/60-80 mmHg), indicating a stable cardiovascular system.\n- Oxygen Saturation: 96, which is slightly below the normal range (98-100%), indicating mild hypoxia, but it's not severe.\n- Symptoms: Mild chest pain and fatigue, which can be indicative of minor cardiac issues or low-level stress.\n\nConsidering these factors, I will predict a recovery score of 60. This score reflects the patient's stable vital signs and mild symptoms, indicating a manageable condition with a moderate potential for recovery.",
+        "feedback": "Feeling better after medication."
+    },
+    {
+        "vitals": {
+            "heart_rate": 85,
+            "bp": "125/85",
+            "oxygen_saturation": 96,
+            "symptoms": "Mild chest pain and fatigue"
+        },
+        "score": "Based on the provided patient vitals and symptoms, I would predict a recovery score of 80.\n\nHere's a breakdown of the factors I considered:\n\n- Heart Rate: 85 (normal range: 60-100) - 5 points\n- Blood Pressure: 125/85 (normal range: 90-120/60-80) - 0 points\n- Oxygen Saturation: 96 (normal range: 95-100) - 5 points\n- Symptoms: \n  - Mild chest pain - 20 points (potential for cardiac issues)\n  - Fatigue - 10 points (non-specific symptom, could be related to many conditions)\n\nThe total score is: 5 + 0 + 5 + 20 + 10 = 40\n\nHowever, considering the patient's overall condition, I would adjust the score to 80 to reflect the potential for a slower recovery due to the mild chest pain.",
+        "feedback": "Feeling better after medication."
+    }
+]

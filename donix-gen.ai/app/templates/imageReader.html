@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Reader</title>
+</head>
+<body>
+    <h1>Upload Image for Text Extraction</h1>
+    <form id="imageForm" enctype="multipart/form-data">
+        <input type="file" id="imageFile" name="image" accept="image/*" required>
+        <button type="submit">Upload and Process Image</button>
+    </form>
+
+    <div id="response"></div>
+
+    <script>
+        document.getElementById('imageForm').addEventListener('submit', async function (event) {
+            event.preventDefault();
+            const imageFile = document.getElementById('imageFile').files[0];
+            if (!imageFile) {
+                alert("Please select an image.");
+                return;
+            }
+            const formData = new FormData();
+            formData.append('image', imageFile);
+            try {
+                const response = await fetch('/image-reader', {
+                    method: 'POST',
+                    body: formData,
+                });
+                const result = await response.json();
+                if (response.ok) {
+                    document.getElementById('response').innerText = `Extracted Text: ${result.extracted_text}`;
+                } else {
+                    document.getElementById('response').innerText = `Error: ${result.message}`;
+                }
+            } catch (error) {
+                console.error('Error during image upload:', error);
+                document.getElementById('response').innerText = 'An error occurred while uploading the image.';
+            }
+        });
+    </script>
+</body>
+</html>

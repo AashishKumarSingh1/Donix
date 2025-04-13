@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Health Recovery Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container py-5">
+    <h2 class="text-center mb-4">AI Recovery Score & Plan Generator</h2>
+    <form method="POST" action="/recovery-routine">
+        <div class="mb-3">
+            <label class="form-label">Heart Rate</label>
+            <input type="number" class="form-control" name="heart_rate" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Blood Pressure</label>
+            <input type="text" class="form-control" name="bp" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Oxygen Saturation</label>
+            <input type="text" class="form-control" name="oxygen_saturation" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Symptoms</label>
+            <input type="text" class="form-control" name="symptoms" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Feedback</label>
+            <input type="text" class="form-control" name="feedback">
+        </div>
+        <button type="submit" class="btn btn-primary">Generate Plan</button>
+    </form>
+
+    {% if submitted %}
+    <hr class="my-4">
+    <h4>Predicted Recovery Score</h4>
+    <p><strong>{{ score }}</strong></p>
+    <h4>Recommended Recovery Plan</h4>
+    <p>{{ plan }}</p>
+    {% endif %}
+</div>
+</body>
+</html>

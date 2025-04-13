@@ -34,11 +34,14 @@
 
 ## Tech-Stack in Building Donix
 - **Frontend** - Next.js,Tailwind CSS
-- **Backend** - TypeScript,Express.js
+- **Backend** - TypeScript,Express.js,Flask
 - **Database** - MongoDB
 - **Gen AI** - Langchain
 - **LLM Models Used** - Ollama,Gemini,Mistral-70B
+- **Notebook** - Jupyter Notebook
+- **Authentication** - Ether js ,metamask
 - **Containerization & Deployment** - Docker
+- **Languages** - Python , JavaScript
 
 ## Summary 
 Donix is not just a platform — it is a mission-driven initiative to make organ donation simpler, smarter, and safer. By integrating cutting-edge AI, a secure digital backbone, and human-centric design, Donix aims to transform India's organ donation landscape and save countless lives through better coordination and care.

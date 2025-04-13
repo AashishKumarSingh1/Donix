@@ -169,7 +169,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            href={"/auth/login"}
+            href={"/Login"}
             className="flex items-center gap-2 px-4 py-2 ml-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:shadow-lg transition-all"
           >
             <LogIn className="w-4 h-4" />
@@ -268,7 +268,7 @@ const Navbar = () => {
             </Link>
             <button
               onClick={() => {
-                router.push("/auth/login");
+                router.push("/auth/Login");
                 setMobileMenuOpen(false);
               }}
               className="w-full flex items-center justify-center gap-2 mt-4 px-4 py-3 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 text-white"
